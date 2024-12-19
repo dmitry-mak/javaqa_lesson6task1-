@@ -7,9 +7,8 @@ public class VacationCalculation {
         int startingBalance = 0;
         int count = 0;
         for (int month = 1; month <= 12; month++) {
-            boolean isVacation = (startingBalance >= threshold);
             int currentBalance;
-            if (isVacation) {
+            if (startingBalance >= threshold) {
                 currentBalance = startingBalance - expenses;
                 int additionalExpenses = currentBalance - currentBalance / 3;
                 currentBalance = currentBalance - additionalExpenses;
