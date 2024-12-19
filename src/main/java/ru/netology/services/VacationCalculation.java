@@ -9,7 +9,7 @@ public class VacationCalculation {
         for (int month = 1; month <= 12; month++) {
             if (currentBalance >= threshold) {
                 currentBalance -= expenses;
-                currentBalance -= (currentBalance - currentBalance / 3);
+                currentBalance /= 3;
                 count++;
             } else {
                 currentBalance = currentBalance + income - expenses;
