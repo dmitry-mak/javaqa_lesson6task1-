@@ -11,5 +11,6 @@ public class Main {
         calculation.calculate(100000, 60000, 150000);
         System.out.println("отдохнуть получится " + calculation.calculate(100000, 60000, 150000) + " раза");
 
+
     }
 }
